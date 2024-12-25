@@ -1,7 +1,7 @@
 FROM php:7.4-cli-alpine
 RUN apk update
 RUN apk add git
-RUN git clone https://github.com/stbbaru2024/mikhmonros7 src
-WORKDIR src
+RUN git clone https://github.com/dennisiswanto777/mikhmon mikhmon
+WORKDIR mikhmon
 ENTRYPOINT ["php"]
 CMD ["-S", "0.0.0.0:80", "-t", "/src/src/"]
